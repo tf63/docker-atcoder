@@ -1,0 +1,17 @@
+version: '3.2'
+
+services:
+  atcoder:
+    # イメージ名を指定
+    image: atcoder:1.0
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: atcoder
+    stdin_open: true
+    tty: true
+    working_dir: '/work'
+    volumes:
+      - ../:/work
