@@ -1,3 +1,4 @@
 tests/
 *.out
 lib/
+.DS_Store
